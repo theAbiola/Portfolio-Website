@@ -1,0 +1,200 @@
+/* Maybe we'll need this for the footer
+ .gradient-background {
+    background: linear-gradient(300deg, #00bfff, #914cff, #72d4ef);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  } */
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(97, 95, 93);
+  }
+
+  
+
+.agu-display-hero-font {
+  font-family: "Agu Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+
+
+.assistant-body-font {
+  font-family: "Assistant", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* The head section */
+.first-container {
+    display: flex;
+    padding-top: 190px;
+    background-image: url(../images/chess-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 300px;
+}
+
+.heading-text {
+    flex-basis: 60%;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 30px;
+}
+
+.heading-text h1 {
+    font-size: 3rem;
+    color: black;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.heading-text h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.heading-image {
+    flex-basis: 35%;
+    margin-right: 90px;
+}
+
+.heading-image img {
+    height: 300px;
+    border-radius: 50%;
+}
+
+@media (max-width: 980px) {
+    .first-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .heading-text {
+        flex-basis: 40%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .heading-image {
+        flex-basis: 60%;
+        margin-left: 20%;
+
+    }
+}
+
+hr {
+    border-style: dotted dotted none;
+    border-width: 10px;
+    width: 4%;
+    margin: 30px auto 70px auto;
+    border-color: grey;
+}
+
+
+/* Skills and professional background section */
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(236, 229, 229); */
+}
+
+.skills-description {
+    flex-basis: 65%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.skills-description h2 {
+    font-size: 2rem;
+}
+
+
+/* Recent projects section */
+.third-container h2 {
+    text-align: center;
+    margin: 5px 10%
+}
+
+.third-container p {
+    text-align: center;
+    margin: 10px 10%
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact section */
+.fourth-container h2 {
+    text-align: center;
+    margin: 5px 10%
+}
+
+.fourth-container p {
+    text-align: center;
+    margin: 10px 10%
+}
+
+.fourth-container button {
+    display: block;
+    margin: 50px auto;
+    font-size: 1.2rem;
+    padding:10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(250, 157, 43);
+}
+
+/* Footer section */
+.fifth-container {
+    height: 130px;
+    background-color: rgb(250, 157, 43);
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
