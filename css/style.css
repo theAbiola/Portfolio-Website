@@ -99,6 +99,9 @@
         margin-left: 20%;
 
     }
+    .heading-image img {
+        height: 200px;
+    }
 }
 
 hr {
